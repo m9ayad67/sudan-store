@@ -2,22 +2,20 @@ import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 
 void main() {
-  runApp(const SudanStoreApp());
+  runApp(const SudanStore());
 }
 
-class SudanStoreApp extends StatelessWidget {
-  const SudanStoreApp({super.key});
+class SudanStore extends StatelessWidget {
+  const SudanStore({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'SUDAN STORE',
+      title: 'متجر السودان',
       theme: ThemeData(
+        primarySwatch: Colors.green,
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF087443),
-        ),
       ),
       home: const HomeScreen(),
     );
